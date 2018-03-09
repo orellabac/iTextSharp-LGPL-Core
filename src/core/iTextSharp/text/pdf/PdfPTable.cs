@@ -1198,10 +1198,10 @@ namespace iTextSharp.text.pdf {
                     case PdfWriter.RUN_DIRECTION_NO_BIDI:
                     case PdfWriter.RUN_DIRECTION_LTR:
                     case PdfWriter.RUN_DIRECTION_RTL:
-                        this.runDirection = runDirection;
+                        this.runDirection = value;
                         break;
                     default:
-                        throw new ArgumentException("Invalid run direction: " + runDirection);
+                        throw new ArgumentException("Invalid run direction: " + value);
                 }
             }
         }
